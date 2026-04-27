@@ -16,6 +16,12 @@
       --radius-xl: 28px;
       --safe-top: env(safe-area-inset-top, 0px);
       --safe-bottom: env(safe-area-inset-bottom, 0px);
+      .photo-profil {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
     }
 
     * {
@@ -1281,6 +1287,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
 </head>
 <body>
+<img class="photo-profil" src="download.png" alt="Photo de profil">
   <div class="iphone-frame">
     <div class="app">
       <div class="page-loader" id="pageLoader" aria-hidden="true">
@@ -2278,6 +2285,3 @@
   </script>
 
 </head>
-<body>
-  <img class="photo-profil" src="download.png" alt="Photo de profil">
-</body>
